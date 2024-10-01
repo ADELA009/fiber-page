@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiber Portfolio Landing Page</title>
     <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+    <script defer src="index.js"></script> <!-- Link to your JS file -->
 </head>
 <body>
 
@@ -19,16 +20,36 @@
             </nav>
             <div class="signinbtns">
                 <button class="signin">Sign In</button>
-                <button class="signup">Sign Up</button>
+                <button class="signup"><a href="signup.html">Sign Up</a></button>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="mobile-menu">
+            <nav class="mobile-navmenu">
+                <a href="#">Community</a>
+                <a href="#">Pricing</a>
+                <a href="#">Features</a>
+                <button class="signin">Sign In</button>
+                <a href="signup.html"><button class="signup"> Sign Up</button></a>
+            </nav>
         </div>
     </header>
 
+    <!-- Rest of your sections remain the same -->
+
+
+
+
     <!-- Hero Section -->
     <section class="hero">
-        <div class="text-section">
+        <div class="hero-text">
             <div class="stars">
-                <span>⭐⭐⭐⭐⭐</span>
+                <span><img src="" alt=""></span>
                 <span> Rated 4.8/5 (243 reviews)</span>
             </div>
             <h1>Create your portfolio in minutes.</h1>
@@ -42,7 +63,7 @@
                 <span> <img src="Assets/Checkmark.svg" alt="checkmark"> 10 Free Templates</span>
             </div>
         </div>
-        <div class="image-section">
+        <div class="hero-image">
             <img src="Assets/hero-Illustration.png" style="width: 40vw;" alt="Portfolio illustration" class="img">
         </div>
     </section>
@@ -51,19 +72,19 @@
     <section class="why-fiber">
         <h2>Why Fiber?</h2>
         <h3>A good portfolio means good employability.</h3>
-        <div class="features">
+        <div class="features-grid">
             <div class="feature">
-                <img src="Assets/time.svg" style="width: 30%;" alt="Build in minutes icon">
+                <img src="Assets/time.svg" style="width: 10%;" alt="Build in minutes icon">
                 <h4>Build in minutes</h4>
                 <p>With a selection of premade templates, you can build out a portfolio in less than 10 minutes.</p>
             </div>
             <div class="feature">
-                <img src="Assets/code.svg" style="width: 30%;" alt="Add custom CSS icon">
+                <img src="Assets/code.svg" style="width: 10%;" alt="Add custom CSS icon">
                 <h4>Add custom CSS</h4>
                 <p>Customize your personal portfolio even more with the ability to add your own custom CSS styles.</p>
             </div>
             <div class="feature">
-                <img src="Assets/allSizes.svg" style="width: 30%;" alt="Responsive icon">
+                <img src="Assets/allSizes.svg" style="width: 10%;" alt="Responsive icon">
                 <h4>Responsive</h4>
                 <p>All Fiber templates are fully responsive to ensure the experience is seamless across all devices.</p>
             </div>
@@ -108,12 +129,14 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bottom-sec">
+    <footer class="footer-columns">
         <div class="fibre-bottom">
             <h3>Fiber</h3>
             <p>With Fiber, you can set up your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
             <p>Made with ❤️ in the Netherlands.</p>
         </div>
+
+        
         <div class="sitemap">
             <h4>Sitemap</h4>
             <ul>
@@ -123,6 +146,8 @@
                 <li>Features</li>
             </ul>
         </div>
+
+        
         <div class="resources">
             <h4>Resources</h4>
             <ul>
